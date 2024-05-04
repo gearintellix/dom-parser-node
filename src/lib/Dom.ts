@@ -8,7 +8,7 @@ const splitAttrRegExp = /(\s[a-z0-9-_:]+\b\s*)(?:=(\s*('|")[\s\S]*?\3))?/gi;
 const startTagExp = /^<[a-z]/;
 const selfCloseTagExp = /\/>$/;
 const closeTagExp = /^<\//;
-const textNodeExp = /^[^<]/;
+const textNodeExp = /^([^<]|<![a-z])/i;
 const nodeNameExp = /<\/?((?:([a-z][a-z0-9]*):)?(?:[a-z](?:[a-z0-9-_.]*[a-z0-9])?))/i;
 const attributeQuotesExp = /^('|")|('|")$/g;
 const noClosingTagsExp = /^(?:area|base|br|col|command|embed|hr|img|input|link|meta|param|source)/i;
