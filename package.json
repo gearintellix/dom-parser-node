@@ -35,7 +35,8 @@
     "lint": "eslint src",
     "prettier": "npx prettier --check .",
     "build": "tsc",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "postinstall": "tsc"
   },
   "author": "Konstantin Ershov",
   "license": "ISC",
