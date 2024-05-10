@@ -16,7 +16,7 @@
     "htmlparser",
     "scraping"
   ],
-  "main": "dist/index.js",
+  "main": "src/index.ts",
   "devDependencies": {
     "@types/jest": "^29.5.6",
     "dom-compare": "https://github.com/ershov-konst/dom-compare.git",
@@ -35,8 +35,7 @@
     "lint": "eslint src",
     "prettier": "npx prettier --check .",
     "build": "tsc",
-    "test": "jest --coverage",
-    "postinstall": "tsc"
+    "test": "jest --coverage"
   },
   "author": "Konstantin Ershov",
   "license": "ISC",
